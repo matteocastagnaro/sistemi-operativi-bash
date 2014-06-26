@@ -17,7 +17,7 @@ echo " 5.	Cerca in cronologia sessione;";
 echo " 6.	Esci;";
 echo;
 
-echo -en "> ";
+echo -n "> ";
 read choose
 
 case $choose in
@@ -33,7 +33,6 @@ case $choose in
 		 ./script/CercaInCronologiaSessione.sh;;
 	6) echo "> program killed." >> $h;
 		 exit;;
-	9) telnet towel.blinkenlights.nl;;
 	*) echo "> ERROR: not selected a number from 1 to 6: return to menu;" >> $h;
 		 echo "ERRORE. Selezionare i numeri da 1 a 6.";;
 esac

@@ -4,7 +4,7 @@ temporary="/tmp/.tmp.txt";
 session=`cat $temporary`;
 h=".history";
 
-if test "$session" = "";then
+if test -z "$session";then
 	echo "ERRORE. Impostare prima il file '.log'";
 	echo "> ERROR: log file not selected;" >> $h;
 else

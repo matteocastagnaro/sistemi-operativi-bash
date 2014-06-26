@@ -7,7 +7,7 @@ h=".history"
 function imposta(){
 	thereisFile="no";
 	
-	echo -en "imposta: ";
+	echo -n "imposta: ";
 	read choose;
 
 	for file in $(echo "`find -name "*.log" |sort |cut -d"." -f2`" |cut -d'/' -f2); do
@@ -32,7 +32,7 @@ function imposta(){
 function rimuovi(){
 	thereisFile="no";
 
-	echo -en "rimuovi: ";
+	echo -n "rimuovi: ";
 	read choose;
 	
 	for file in $(echo "`find -name "*.log" |sort |cut -d"." -f2`" | cut -d'/' -f2); do
